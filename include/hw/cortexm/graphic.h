@@ -23,13 +23,8 @@
 #include "qemu/osdep.h"
 
 #if defined(CONFIG_SDL)
-#if defined(CONFIG_SDLABI_2_0)
-#include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
-#elif defined(CONFIG_SDLABI_1_2)
-#include "SDL/SDL.h"
-#include "SDL/SDL_image.h"
-#endif
+#include "SDL.h"
+#include "SDL_image.h"
 #endif /* defined(CONFIG_SDL) */
 
 // ----------------------------------------------------------------------------
